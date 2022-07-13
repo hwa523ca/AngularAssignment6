@@ -1,0 +1,14 @@
+h2
+{
+    padding-left: 600px;
+    padding-top: 300px;
+}
+nav[id="logincomp"]
+{
+    padding-left: 600px;
+    padding-top: 100px;
+}
+nav[id="loginbutton"]
+{
+    padding-top: 10px;
+}

@@ -1,0 +1,15 @@
+div[class="btn-group"]
+{
+    padding-left: 560px;
+}
+div[class="dropdown"]
+{
+    padding-left: 50px;
+}
+a[class="dropdown-item"]
+{
+    width: 150px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}

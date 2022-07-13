@@ -1,0 +1,21 @@
+td{
+    vertical-align: middle;
+}
+th{
+    vertical-align: middle;
+}
+div[class="btn-group"]
+{
+    padding-left: 560px;
+}
+div[class="dropdown"]
+{
+    padding-left: 50px;
+}
+a[class="dropdown-item"]
+{
+    width: 120px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}

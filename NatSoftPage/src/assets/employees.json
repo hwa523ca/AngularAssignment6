@@ -1,0 +1,7 @@
+[
+    {"empID":10101, "empName":"Henry Anderson", "empSalary":50000, "empDesignation":"Software Engineer", "empImg":"../../assets/henryandersonimage.jpg"},
+    {"empID":10105, "empName":"Gabriel Iglesias", "empSalary":50000, "empDesignation":"Software Engineer", "empImg":"../../assets/gabrieliglesiasimage.jpg"},
+    {"empID":10106, "empName":"Jordan Peele", "empSalary":80000, "empDesignation":"Software Engineer Lead", "empImg":"../../assets/jordanpeeleimage.jpg"},
+    {"empID":10109, "empName":"Scott Wozniak", "empSalary":30000, "empDesignation":"Software Engineer Intern", "empImg":"../../assets/scottwozniakimage.jpg"},
+    {"empID":10110, "empName":"Bill Gates", "empSalary":200000, "empDesignation":"Chief Executive Officer", "empImg":"../../assets/billgatesimage.jpg"}
+]

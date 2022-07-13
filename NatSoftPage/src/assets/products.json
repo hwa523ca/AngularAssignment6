@@ -1,0 +1,8 @@
+[
+    {"prodID":20101, "prodName":"Wedding Ring","prodPrice":5000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"},
+    {"prodID":20102, "prodName":"Diamond Necklace","prodPrice":8000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"},
+    {"prodID":20103, "prodName":"Diamond","prodPrice":2000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"},
+    {"prodID":20104, "prodName":"Diamond Bracelet","prodPrice":6000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"},
+    {"prodID":20105, "prodName":"Diamond Ring","prodPrice":4000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"},
+    {"prodID":20106, "prodName":"Diamond Crown","prodPrice":20000,"prodCategory":"Jewelry","prodImage":"../../assets/tempdiamondimage.jpg"}
+]

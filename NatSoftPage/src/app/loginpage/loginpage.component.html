@@ -1,0 +1,11 @@
+<!-- <p>loginpage works!</p> -->
+<nav id="logincomp" *ngIf="notlogged">
+    <nav>Username:</nav>
+    <nav><input type="text" #usna/></nav>
+    <nav>Password:</nav>
+    <nav><input type="text" #pswd/></nav>
+    <nav id="loginbutton"><button class="btn btn-secondary" type="button" (click)="clicktologin(usna.value,pswd.value)">LogIn</button></nav>
+</nav>
+<nav *ngIf="nowlogged">
+    <h2>You are now logged in!</h2>
+</nav>
