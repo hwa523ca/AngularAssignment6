@@ -13,3 +13,6 @@ a[class="dropdown-item"]
     border-color: black;
     border-style: solid;
 }
+div[id="cardbottom"]{
+    height: 50%;
+}

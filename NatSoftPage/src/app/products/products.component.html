@@ -44,7 +44,7 @@
             <div class="row" *ngIf="byID">
               <div *ngFor="let product of (products|sortbyid2)" class="col-sm">
                 <img class="cardimg" [src]='product.prodImage' width="100%"/>
-                  <div class="card-body" style="background-color: aqua;">
+                  <div class="card-body" style="background-color: aqua;" id="cardbottom">
                     <h4 class="cardname">{{product.prodName | titlecase}}</h4>
                     <p>Product ID: {{product.prodID}}</p>
                     <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
@@ -56,7 +56,7 @@
             <div class="row" *ngIf="byNA">
               <div *ngFor="let product of (products|sortbynamea2)" class="col-sm">
                 <img class="cardimg" [src]='product.prodImage' width="100%"/>
-                  <div class="card-body" style="background-color: aqua;">
+                  <div class="card-body" style="background-color: aqua;" id="cardbottom">
                     <h4 class="cardname">{{product.prodName | titlecase}}</h4>
                     <p>Product ID: {{product.prodID}}</p>
                     <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
@@ -68,7 +68,7 @@
             <div class="row" *ngIf="byNZ">
               <div *ngFor="let product of (products|sortbynamez2)" class="col-sm">
                 <img class="cardimg" [src]='product.prodImage' width="100%"/>
-                  <div class="card-body" style="background-color: aqua;">
+                  <div class="card-body" style="background-color: aqua;" id="cardbottom">
                     <h4 class="cardname">{{product.prodName | titlecase}}</h4>
                     <p>Product ID: {{product.prodID}}</p>
                     <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
@@ -80,7 +80,7 @@
             <div class="row" *ngIf="byPU">
               <div *ngFor="let product of (products|sortbypriceup)" class="col-sm">
                 <img class="cardimg" [src]='product.prodImage' width="100%"/>
-                  <div class="card-body" style="background-color: aqua;">
+                  <div class="card-body" style="background-color: aqua;" id="cardbottom">
                     <h4 class="cardname">{{product.prodName | titlecase}}</h4>
                     <p>Product ID: {{product.prodID}}</p>
                     <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
@@ -92,7 +92,7 @@
             <div class="row" *ngIf="byPD">
               <div *ngFor="let product of (products|sortbypricedown)" class="col-sm">
                 <img class="cardimg" [src]='product.prodImage' width="100%"/>
-                  <div class="card-body" style="background-color: aqua;">
+                  <div class="card-body" style="background-color: aqua;" id="cardbottom">
                     <h4 class="cardname">{{product.prodName | titlecase}}</h4>
                     <p>Product ID: {{product.prodID}}</p>
                     <p>Price: {{product.prodPrice | currency:'USD':true}}</p>

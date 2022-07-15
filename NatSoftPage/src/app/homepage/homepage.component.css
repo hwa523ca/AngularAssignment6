@@ -7,3 +7,11 @@ footer {
 div[class="fixed-bottom"]{
     background-color: aquamarine;
 }
+div[id="cardbottom"]{
+    width: 40%;
+    height: 50%;
+}
+div[id="thecards"]{
+    float: left;
+    margin-right: -500px;
+}

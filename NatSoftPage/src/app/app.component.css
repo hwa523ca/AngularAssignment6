@@ -1,0 +1,21 @@
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+div[class="fixed-bottom"]{
+    background-color: aquamarine;
+}
+div[id="cardbottom"]{
+    width: 40%;
+    height: 58%;
+}
+div[id="thecards"]{
+    float: left;
+    margin-right: -500px;
+}
+.container {
+    width: 100%;
+    white-space: nowrap;
+}

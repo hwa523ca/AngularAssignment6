@@ -20,9 +20,10 @@ import { SortbypricePipe } from './pipes/sortbyprice.pipe';
 import { SortbypriceupPipe } from './pipes/sortbypriceup.pipe';
 import { SortbypricedownPipe } from './pipes/sortbypricedown.pipe';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { LoggedoutpageComponent } from './loggedoutpage/loggedoutpage.component';
 
 @NgModule({
-  declarations: [AppComponent, EmployeesComponent, ProductsComponent, SortbyidPipe, SortbynameaPipe, SortbynamezPipe, Sortbyid2Pipe, Sortbynamea2Pipe, Sortbynamez2Pipe, HomepageComponent, Homepage2Component, SortbypricePipe, SortbypriceupPipe, SortbypricedownPipe, LoginpageComponent],
+  declarations: [AppComponent, EmployeesComponent, ProductsComponent, SortbyidPipe, SortbynameaPipe, SortbynamezPipe, Sortbyid2Pipe, Sortbynamea2Pipe, Sortbynamez2Pipe, HomepageComponent, Homepage2Component, SortbypricePipe, SortbypriceupPipe, SortbypricedownPipe, LoginpageComponent, LoggedoutpageComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, NgxPopper],
   providers: [],
   bootstrap: [AppComponent]

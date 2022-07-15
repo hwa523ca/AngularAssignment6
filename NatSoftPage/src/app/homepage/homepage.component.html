@@ -14,8 +14,37 @@
                 </a>
             </div>
         </div>
-        <div class="col py-3">
-            <!--Put stuff here-->
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-black min-vh-100">
+            <div class="row">
+                <br/>
+                <div *ngFor="let product of (products1|sortbyid2)" class="col-sm" id="prodlist">
+                    <img class="cardimg" [src]='product.prodImage' width="40%"/>
+                    <div class="card-body" style="background-color: aqua;" id="cardbottom">
+                        <h4 class="cardname">{{product.prodName | titlecase}}</h4>
+                        <p>Product ID: {{product.prodID}}</p>
+                        <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
+                        <p>Category: {{product.prodCategory}}</p>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <br/>
+                <div *ngFor="let product of (products2|sortbyid2)" class="col-sm" id="prodlist">
+                    <img class="cardimg" [src]='product.prodImage' id="thecards" width="40%"/>
+                    <div class="card-body" style="background-color: aqua;" id="cardbottom">
+                        <h4 class="cardname">{{product.prodName | titlecase}}</h4>
+                        <p>Product ID: {{product.prodID}}</p>
+                        <p>Price: {{product.prodPrice | currency:'USD':true}}</p>
+                        <p>Category: {{product.prodCategory}}</p>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row"><img class="cardimg" src='../../assets/stockchart.png' width="100px" height="400px"/></div>
+            <div class="row"><img class="cardimg" src='../../assets/tempdiamondimage.jpg' width="100px" height="400px"/></div>
         </div>
     </div>
 </div>
