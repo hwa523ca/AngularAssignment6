@@ -34,6 +34,12 @@
               <a *ngIf="showBut" class="dropdown-item" (click)="sortNameA()">Name (A-Z)</a>
               <a *ngIf="showBut" class="dropdown-item" (click)="sortNameZ()">Name (Z-A)</a>
         </div>
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" placeholder="SEARCH" #searchWord/>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="sortSearch()">SEARCH</button>
+        </div>
         <br/>
         <table class="table">
             <thead>
@@ -70,6 +76,15 @@
                     <td>{{employee.empSalary | currency:'USD':true}}</td>
                     <td>{{employee.empDesignation}}</td>
                     <td><img width="200px" height="200px" [src]='employee.empImg'/></td>
+                </tr>
+            </tbody>
+            <tbody *ngIf="bySE">
+                <tr *ngFor="let employee of (employees|sortbynamea)">
+                    <td *ngIf="true?matchFound2(searchWord.value,employee.name):false">{{employee.empID}}</td>
+                    <td *ngIf="true?matchFound2(searchWord.value,employee.name):false">{{employee.empName | titlecase}}</td>
+                    <td *ngIf="true?matchFound2(searchWord.value,employee.name):false">{{employee.empSalary | currency:'USD':true}}</td>
+                    <td *ngIf="true?matchFound2(searchWord.value,employee.name):false">{{employee.empDesignation}}</td>
+                    <td *ngIf="true?matchFound2(searchWord.value,employee.name):false"><img width="200px" height="200px" [src]='employee.empImg'/></td>
                 </tr>
             </tbody>
         </table>

@@ -9,11 +9,13 @@ import { EmployeeService } from '../services/employee.service';
 })
 export class EmployeesComponent {
   employees:any = [];
+  employees2:any = [];
   errorMsg:string = '';
   filtby:string = "sortbyid";
   byID:boolean = true;
   byNA:boolean = false;
   byNZ:boolean = false;
+  bySE:boolean = false;
   showb:number = 0;
   showBut:boolean = false;
   constructor(empService:EmployeeService){
@@ -31,6 +33,7 @@ export class EmployeesComponent {
     this.byID = true;
     this.byNA = false;
     this.byNZ = false;
+    this.bySE = false;
     console.log(this.filtby);
     this.showb = 0;
     this.showBut = false;
@@ -44,6 +47,7 @@ export class EmployeesComponent {
     this.byID = false;
     this.byNA = true;
     this.byNZ = false;
+    this.bySE = false;
     console.log(this.filtby);
     this.showb = 0;
     this.showBut = false;
@@ -57,6 +61,21 @@ export class EmployeesComponent {
     this.byID = false;
     this.byNA = false;
     this.byNZ = true;
+    this.bySE = false;
+    console.log(this.filtby);
+    this.showb = 0;
+    this.showBut = false;
+  }
+
+  sortSearch()
+  {
+    // let newemps = this.employees.sort((a, b) => (a.empName > b.empName ? -1 : 1));
+    // this.employees = newemps;
+    this.filtby = "sortbysearch";
+    this.byID = false;
+    this.byNA = false;
+    this.byNZ = false;
+    this.bySE = true;
     console.log(this.filtby);
     this.showb = 0;
     this.showBut = false;
@@ -74,5 +93,34 @@ export class EmployeesComponent {
       this.showb = 0;
       this.showBut = false;
     }
+  }
+
+  matchFound(nameSearch:string)
+  {
+    for (let i = 0; i < this.employees.length; i++)
+    {
+      if (nameSearch == this.employees.empName)
+      {
+        this.employees2.push(this.employees);
+      }
+    }
+  }
+
+  matchFound2(nameSearch:string,nameFound:string)
+  {
+    console.log(nameSearch);
+    // console.log(nameFound);
+    // if (nameSearch === nameFound) return true;
+    // else return false;
+    for (let i = 0; i < this.employees.length; i++)
+    {
+      console.log(this.employees.empName);
+      if (nameSearch === this.employees.empName)
+      {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
