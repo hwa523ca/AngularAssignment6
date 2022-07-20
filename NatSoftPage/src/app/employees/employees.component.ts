@@ -18,6 +18,7 @@ export class EmployeesComponent {
   bySE:boolean = false;
   showb:number = 0;
   showBut:boolean = false;
+  searchByName: string = "";
   constructor(empService:EmployeeService){
     // this.employees = empService.getEmployeesInfo();
     //console.log(this.employees);
